@@ -83,13 +83,10 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<!--jdbc mysql-driver-->
-		
-		
+
 	</dependencies>
 
 
-	
 
 	<build>
 		<plugins>

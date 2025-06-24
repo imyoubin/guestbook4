@@ -7,7 +7,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.javaex.dao.GuestbookDAO;
 import com.javaex.vo.GuestbookVO;
@@ -40,7 +39,7 @@ public class GuestbookController {
 		//*View개념
 		//D.S 야!!!!! 
 		// "/WEB-INF/views/addlist.jsp" 에 포워드해
-		//#view resolve(application.properties)
+		//#view resolve(application.properties 설정)
 		return "addlist";
 		
 	}
@@ -108,7 +107,7 @@ public class GuestbookController {
 	public String removeForm() {
 		System.out.println("GuestbookController.removeForm()");
 		
-		//#view resolve(application.properties)
+		//#view resolve(application.properties 설정)
 		return "removeform";
 	}
 	
