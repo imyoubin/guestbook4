@@ -8,7 +8,7 @@
 		<version>3.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+	<groupId>com.javaex</groupId>
 	<artifactId>guestbook4</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
@@ -30,13 +30,14 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+	
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -45,39 +46,50 @@
 		
 		<!--jsp servlet으로 변환-->
 		<dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>
-			<scope>provided</scope>
+		    <groupId>org.apache.tomcat.embed</groupId>
+		    <artifactId>tomcat-embed-jasper</artifactId>
+		    <scope>provided</scope>
 		</dependency>
-		<!--jsp servlet으로 변환-->
 		
 		<!--jstl-->
 		<dependency>
-			<groupId>jakarta.servlet</groupId>
-			<artifactId>jakarta.servlet-api</artifactId>
-			<scope>provided</scope>
+		    <groupId>jakarta.servlet</groupId>
+		    <artifactId>jakarta.servlet-api</artifactId>
+		    <scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>jakarta.servlet.jsp.jstl</groupId>
-			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.web</groupId>
-			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
-		</dependency>
-		<!--jstl-->
 		
-		<!--devtools-->			
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
+		    <groupId>jakarta.servlet.jsp.jstl</groupId>
+		    <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.glassfish.web</groupId>
+		    <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+		</dependency>
+		<!--//jstl-->
+		
+		<!--devtools -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-devtools</artifactId>
+		    <scope>runtime</scope>
+		    <optional>true</optional>
+		</dependency>
+
+		<!--jdbc mysql-driver-->
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
-			<optional>true</optional>
 		</dependency>
-		<!--devtools-->
+		<!--jdbc mysql-driver-->
 		
 		
 	</dependencies>
+
+
+	
 
 	<build>
 		<plugins>

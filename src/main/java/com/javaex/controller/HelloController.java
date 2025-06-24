@@ -15,20 +15,21 @@ public class HelloController {
 	//메소드gs
 	
 	//메소드일반
-	@RequestMapping(value="/ User/list", method={RequestMethod.GET, RequestMethod.POST})
-	public String select() {
-		
-		System.out.println("guestbook4/list");
-		
-	    return "";
-	}
+	//메소드일반
+		@RequestMapping(value="/ User/list", method={RequestMethod.GET, RequestMethod.POST})
+		public String select() {
+			
+			System.out.println("guestbook4/list");
+			
+		    return "";
+		}
 
-	@RequestMapping(value="/ User/remove", method={RequestMethod.GET, RequestMethod.POST})
-	public String delete() {
-		
-		System.out.println("guestbook4/remove");
-		
-	    return "";
-	}
+		@RequestMapping(value="/ User/remove", method={RequestMethod.GET, RequestMethod.POST})
+		public String delete() {
+			
+			System.out.println("guestbook4/remove");
+			
+		    return "";
+		}
 
-}
+	}
